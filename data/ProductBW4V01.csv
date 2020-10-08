@@ -1,0 +1,30 @@
+MaterialDescr;MaterialNumber;ProductCategory;Division;Color;Components
+Deluxe Touring Bike (black);DXTR1000;TOU;BI;Black;Shimano Road
+Deluxe Touring Bike (silver);DXTR2000;TOU;BI;Silver ;Shimano Road
+Deluxe Touring Bike (red);DXTR3000;TOU;BI;Red;Shimano Road
+Professional Touring Bike (black);PRTR1000;TOU;BI;Black;Shimano XT
+Professional Touring Bike (silver);PRTR2000;TOU;BI;Silver ;Shimano XT
+Professional Touring Bike (red);PRTR3000;TOU;BI;Red;Shimano XT
+Men's Off Road Bike Fully;ORMN1000;ORB;BI;;SRAM XO
+Women's Off Road Bike Fully;ORWN1000;ORB;BI;;SRAM XO
+Men's Off Road Bike Hard Tail (Shimano);ORHT1000;ORB;BI;;Shimano XT
+Men's Off Road Bike Hard Tail (SRAM);ORHT2000;ORB;BI;;SRAM X9
+Deluxe Road Bike (Shimano);DXRD1000;ROB;BI;;Shimano Ultegra
+Deluxe Road Bike (SRAM);DXRD2000;ROB;BI;;SRAM Force
+Professional Road Bike (Shimano);PRRD1000;ROB;BI;;Shimano Dura Ace
+Professional Road Bike (SRAM);PRRD2000;ROB;BI;;SRAM Red
+Professional Road Bike (Campagnolo);PRRD3000;ROB;BI;;Campa Record
+Fixed Gear Bike Plus;FXGR1000;TRE;BI;;
+City Bike Max;CITY1000;TRE;BI;;
+E-Bike Tailwind;ELBK1000;EBI;BI;;
+Hoverboard;HVBD1000;EBI;BI;;
+Elbow Pads;EPAD1000;ACC;AS;;
+T-shirt;SHRT1000;ACC;AS;;
+Knee Pads;KPAD1000;ACC;AS;;
+Off Road Helmet;OHMT1000;ACC;AS;;
+Road Helmet;RHMT1000;ACC;AS;;
+Water Bottle Cage;CAGE1000;ACC;AS;;
+Repair Kit;RKIT1000;ACC;AS;;
+Air Pump;PUMP1000;ACC;AS;;
+Water Bottle;BOTL1000;ACC;AS;;
+First Aid Kit;FAID1000;ACC;AS;;
