@@ -1,0 +1,205 @@
+{
+  "definitions": {
+    "SXX_Products_Brb": {
+      "kind": "entity",
+      "elements": {
+        "PRODUCTID": {
+          "type": "cds.String",
+          "key": true,
+          "@EndUserText.label": "Product ID",
+          "length": 10
+        },
+        "PRODCATEGORYID": {
+          "type": "cds.String",
+          "@EndUserText.label": "Product category ID",
+          "length": 2
+        },
+        "_SXX_ProductTexts_Brb": {
+          "on": [
+            {
+              "ref": [
+                "PRODUCTID"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "_SXX_ProductTexts_Brb",
+                "PRODUCTID"
+              ]
+            }
+          ],
+          "target": "SXX_ProductTexts_Brb",
+          "type": "cds.Association"
+        }
+      },
+      "@EndUserText.label": "SXX_Products_Brb",
+      "@Analytics.dataCategory": {
+        "#": "DataSet"
+      },
+      "@DataWarehouse.pinToMemory": true
+    },
+    "SXX_ProductTexts_Brb": {
+      "kind": "entity",
+      "elements": {
+        "PRODUCTID": {
+          "type": "cds.String",
+          "key": true,
+          "@EndUserText.label": "Product ID",
+          "length": 10
+        },
+        "LANGUAGE": {
+          "type": "cds.String",
+          "key": true,
+          "@Analytics.dimension": true,
+          "@EndUserText.label": "Language",
+          "length": 2
+        },
+        "SHORT_DESCR": {
+          "type": "cds.String",
+          "@EndUserText.label": "Short Descr",
+          "length": 20
+        },
+        "MEDIUM_DESCR": {
+          "type": "cds.String",
+          "@Analytics.dimension": true,
+          "@EndUserText.label": "Medium Descr",
+          "length": 40
+        },
+        "LONG_DESCR": {
+          "type": "cds.String",
+          "@Analytics.dimension": true,
+          "@EndUserText.label": "Long Descr",
+          "length": 60
+        }
+      },
+      "@EndUserText.label": "SXX_ProductTexts_Brb",
+      "@Analytics.dataCategory": {
+        "#": "DataSet"
+      },
+      "@DataWarehouse.pinToMemory": true
+    },
+    "SXX_SalesOrderItems_Brb": {
+      "kind": "entity",
+      "elements": {
+        "SALESORDERID": {
+          "type": "cds.String",
+          "key": true,
+          "@EndUserText.label": "Sales order ID",
+          "length": 10
+        },
+        "SALESORDERITEM": {
+          "type": "cds.String",
+          "key": true,
+          "@EndUserText.label": "Sales order item",
+          "length": 10
+        },
+        "PRODUCTID": {
+          "type": "cds.String",
+          "@EndUserText.label": "Product ID",
+          "length": 10
+        },
+        "CURRENCY": {
+          "type": "cds.String",
+          "@EndUserText.label": "Currency key",
+          "length": 5
+        },
+        "GROSSAMOUNT": {
+          "type": "cds.Decimal",
+          "@EndUserText.label": "Gross amount",
+          "precision": 15,
+          "scale": 2
+        },
+        "NETAMOUNT": {
+          "type": "cds.Decimal",
+          "@EndUserText.label": "Net amount",
+          "precision": 15,
+          "scale": 2
+        },
+        "TAXAMOUNT": {
+          "type": "cds.Decimal",
+          "@EndUserText.label": "Tax amount",
+          "precision": 15,
+          "scale": 2
+        },
+        "QUANTITY": {
+          "type": "cds.Decimal",
+          "@EndUserText.label": "Quantity",
+          "precision": 13,
+          "scale": 3
+        },
+        "QUANTITYUNIT": {
+          "type": "cds.String",
+          "@EndUserText.label": "Quantity unit",
+          "length": 3
+        },
+        "DELIVERYDATE": {
+          "type": "cds.Date",
+          "@EndUserText.label": "Delivery date"
+        },
+        "_SXX_Products_Brb": {
+          "on": [
+            {
+              "ref": [
+                "PRODUCTID"
+              ]
+            },
+            "=",
+            {
+              "ref": [
+                "_SXX_Products_Brb",
+                "PRODUCTID"
+              ]
+            }
+          ],
+          "target": "SXX_Products_Brb",
+          "type": "cds.Association"
+        }
+      },
+      "@EndUserText.label": "SXX_SalesOrderItems_Brb",
+      "@Analytics.dataCategory": {
+        "#": "DataSet"
+      },
+      "@DataWarehouse.pinToMemory": true
+    },
+    "SXX_ProductCategoryMapping": {
+      "kind": "entity",
+      "elements": {
+        "ProdCatBrb": {
+          "type": "cds.String",
+          "@EndUserText.label": "ProdCatBrb",
+          "length": 2
+        },
+        "CatDescrBrb": {
+          "type": "cds.String",
+          "@EndUserText.label": "CatDescrBrb",
+          "length": 20
+        },
+        "ProdCatGbi": {
+          "type": "cds.String",
+          "@EndUserText.label": "ProdCatGbi",
+          "length": 3
+        },
+        "CatDescrGbi": {
+          "type": "cds.String",
+          "@EndUserText.label": "CatDescrGbi",
+          "length": 20
+        }
+      },
+      "@EndUserText.label": "SXX_ProductCategoryMapping",
+      "@Analytics.dataCategory": {
+        "#": "DataSet"
+      },
+      "@DataWarehouse.pinToMemory": true
+    }
+  },
+  "version": {
+    "csn": "1.0"
+  },
+  "meta": {
+    "creator": "ER Modeler",
+    "kind": "sap.dwc.ermodel",
+    "label": "SXX_MergeSalesErm"
+  },
+  "$version": "1.0"
+}
